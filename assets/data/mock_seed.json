@@ -1,0 +1,571 @@
+{
+  "schemaVersion": 1,
+  "demoOnly": true,
+  "referenceNow": "2026-09-16T09:00:00Z",
+  "otpCode": "123456",
+  "company": {
+    "id": "COMP-1",
+    "name": "Northstar Studio",
+    "timezone": "Asia/Kolkata",
+    "workdayTargetMinutes": 480
+  },
+  "teams": [
+    {
+      "id": "TEAM-P",
+      "name": "Product",
+      "managerId": "A001"
+    },
+    {
+      "id": "TEAM-O",
+      "name": "Operations",
+      "managerId": "A002"
+    },
+    {
+      "id": "TEAM-S",
+      "name": "Sales",
+      "managerId": "A003"
+    }
+  ],
+  "users": [
+    {
+      "id": "E001",
+      "name": "Asha Nair",
+      "role": "employee",
+      "teamId": "TEAM-P",
+      "managedTeamId": null,
+      "phoneE164": "+12025550101",
+      "designation": "UI Designer",
+      "managerId": "A001",
+      "joinedAt": "2025-06-02T03:30:00Z",
+      "isActive": true
+    },
+    {
+      "id": "E002",
+      "name": "Rahul Dev",
+      "role": "employee",
+      "teamId": "TEAM-P",
+      "managedTeamId": null,
+      "phoneE164": "+12025550102",
+      "designation": "Flutter Developer",
+      "managerId": "A001",
+      "joinedAt": "2025-06-02T03:30:00Z",
+      "isActive": true
+    },
+    {
+      "id": "E003",
+      "name": "Neha Iyer",
+      "role": "employee",
+      "teamId": "TEAM-O",
+      "managedTeamId": null,
+      "phoneE164": "+12025550103",
+      "designation": "Operations Coordinator",
+      "managerId": "A002",
+      "joinedAt": "2025-06-02T03:30:00Z",
+      "isActive": true
+    },
+    {
+      "id": "E004",
+      "name": "Arjun Rao",
+      "role": "employee",
+      "teamId": "TEAM-O",
+      "managedTeamId": null,
+      "phoneE164": "+12025550104",
+      "designation": "QA Engineer",
+      "managerId": "A002",
+      "joinedAt": "2025-06-02T03:30:00Z",
+      "isActive": true
+    },
+    {
+      "id": "E005",
+      "name": "Kavya Menon",
+      "role": "employee",
+      "teamId": "TEAM-S",
+      "managedTeamId": null,
+      "phoneE164": "+12025550105",
+      "designation": "Account Executive",
+      "managerId": "A003",
+      "joinedAt": "2025-06-02T03:30:00Z",
+      "isActive": true
+    },
+    {
+      "id": "A001",
+      "name": "Priya Sharma",
+      "role": "admin",
+      "teamId": "TEAM-P",
+      "managedTeamId": "TEAM-P",
+      "phoneE164": "+12025550111",
+      "designation": "Product Lead",
+      "managerId": "S001",
+      "joinedAt": "2025-06-02T03:30:00Z",
+      "isActive": true
+    },
+    {
+      "id": "A002",
+      "name": "Karan Mehta",
+      "role": "admin",
+      "teamId": "TEAM-O",
+      "managedTeamId": "TEAM-O",
+      "phoneE164": "+12025550112",
+      "designation": "Operations Lead",
+      "managerId": "S001",
+      "joinedAt": "2025-06-02T03:30:00Z",
+      "isActive": true
+    },
+    {
+      "id": "A003",
+      "name": "Meera Joseph",
+      "role": "admin",
+      "teamId": "TEAM-S",
+      "managedTeamId": "TEAM-S",
+      "phoneE164": "+12025550113",
+      "designation": "Sales Lead",
+      "managerId": "S001",
+      "joinedAt": "2025-06-02T03:30:00Z",
+      "isActive": true
+    },
+    {
+      "id": "S001",
+      "name": "Vikram Shah",
+      "role": "superAdmin",
+      "teamId": null,
+      "managedTeamId": null,
+      "phoneE164": "+12025550199",
+      "designation": "Company Director",
+      "managerId": null,
+      "joinedAt": "2025-06-02T03:30:00Z",
+      "isActive": true
+    }
+  ],
+  "tasks": [
+    {
+      "id": "T001",
+      "title": "Redesign client dashboard",
+      "description": "Refresh the client dashboard with clear task summaries, a weekly chart and accessible status labels.",
+      "teamId": "TEAM-P",
+      "assigneeId": "E001",
+      "createdById": "A001",
+      "status": "inProgress",
+      "priority": "high",
+      "progress": 65,
+      "dueAt": "2026-09-16T12:30:00Z",
+      "createdAt": "2026-09-11T04:00:00Z",
+      "updatedAt": "2026-09-16T08:30:00Z",
+      "completedAt": null
+    },
+    {
+      "id": "T002",
+      "title": "Create workflow icons",
+      "description": "Complete the agreed work, record progress and submit it to your team lead for review.",
+      "teamId": "TEAM-P",
+      "assigneeId": "E001",
+      "createdById": "A001",
+      "status": "todo",
+      "priority": "medium",
+      "progress": 0,
+      "dueAt": "2026-09-18T12:30:00Z",
+      "createdAt": "2026-09-11T04:00:00Z",
+      "updatedAt": "2026-09-16T08:30:00Z",
+      "completedAt": null
+    },
+    {
+      "id": "T003",
+      "title": "Audit mobile navigation",
+      "description": "Complete the agreed work, record progress and submit it to your team lead for review.",
+      "teamId": "TEAM-P",
+      "assigneeId": "E001",
+      "createdById": "A001",
+      "status": "done",
+      "priority": "medium",
+      "progress": 100,
+      "dueAt": "2026-09-14T12:30:00Z",
+      "createdAt": "2026-09-11T04:00:00Z",
+      "updatedAt": "2026-09-16T08:30:00Z",
+      "completedAt": "2026-09-14T08:00:00Z"
+    },
+    {
+      "id": "T004",
+      "title": "Build task list filters",
+      "description": "Complete the agreed work, record progress and submit it to your team lead for review.",
+      "teamId": "TEAM-P",
+      "assigneeId": "E002",
+      "createdById": "A001",
+      "status": "inProgress",
+      "priority": "high",
+      "progress": 45,
+      "dueAt": "2026-09-16T12:30:00Z",
+      "createdAt": "2026-09-11T04:00:00Z",
+      "updatedAt": "2026-09-16T08:30:00Z",
+      "completedAt": null
+    },
+    {
+      "id": "T005",
+      "title": "Connect profile layout",
+      "description": "Complete the agreed work, record progress and submit it to your team lead for review.",
+      "teamId": "TEAM-P",
+      "assigneeId": "E002",
+      "createdById": "A001",
+      "status": "inReview",
+      "priority": "medium",
+      "progress": 100,
+      "dueAt": "2026-09-15T12:30:00Z",
+      "createdAt": "2026-09-11T04:00:00Z",
+      "updatedAt": "2026-09-16T08:30:00Z",
+      "completedAt": null
+    },
+    {
+      "id": "T006",
+      "title": "Fix empty states",
+      "description": "Complete the agreed work, record progress and submit it to your team lead for review.",
+      "teamId": "TEAM-P",
+      "assigneeId": "E002",
+      "createdById": "A001",
+      "status": "done",
+      "priority": "low",
+      "progress": 100,
+      "dueAt": "2026-09-15T12:30:00Z",
+      "createdAt": "2026-09-11T04:00:00Z",
+      "updatedAt": "2026-09-16T08:30:00Z",
+      "completedAt": "2026-09-15T08:00:00Z"
+    },
+    {
+      "id": "T007",
+      "title": "Confirm vendor delivery",
+      "description": "Complete the agreed work, record progress and submit it to your team lead for review.",
+      "teamId": "TEAM-O",
+      "assigneeId": "E003",
+      "createdById": "A002",
+      "status": "blocked",
+      "priority": "high",
+      "progress": 30,
+      "dueAt": "2026-09-15T12:30:00Z",
+      "createdAt": "2026-09-11T04:00:00Z",
+      "updatedAt": "2026-09-16T08:30:00Z",
+      "completedAt": null
+    },
+    {
+      "id": "T008",
+      "title": "Update onboarding checklist",
+      "description": "Complete the agreed work, record progress and submit it to your team lead for review.",
+      "teamId": "TEAM-O",
+      "assigneeId": "E003",
+      "createdById": "A002",
+      "status": "todo",
+      "priority": "medium",
+      "progress": 0,
+      "dueAt": "2026-09-17T12:30:00Z",
+      "createdAt": "2026-09-11T04:00:00Z",
+      "updatedAt": "2026-09-16T08:30:00Z",
+      "completedAt": null
+    },
+    {
+      "id": "T009",
+      "title": "Publish weekly roster",
+      "description": "Complete the agreed work, record progress and submit it to your team lead for review.",
+      "teamId": "TEAM-O",
+      "assigneeId": "E003",
+      "createdById": "A002",
+      "status": "done",
+      "priority": "medium",
+      "progress": 100,
+      "dueAt": "2026-09-14T12:30:00Z",
+      "createdAt": "2026-09-11T04:00:00Z",
+      "updatedAt": "2026-09-16T08:30:00Z",
+      "completedAt": "2026-09-14T08:00:00Z"
+    },
+    {
+      "id": "T010",
+      "title": "Test role permissions",
+      "description": "Complete the agreed work, record progress and submit it to your team lead for review.",
+      "teamId": "TEAM-O",
+      "assigneeId": "E004",
+      "createdById": "A002",
+      "status": "inProgress",
+      "priority": "high",
+      "progress": 70,
+      "dueAt": "2026-09-16T12:30:00Z",
+      "createdAt": "2026-09-11T04:00:00Z",
+      "updatedAt": "2026-09-16T08:30:00Z",
+      "completedAt": null
+    },
+    {
+      "id": "T011",
+      "title": "Review deep link scenarios",
+      "description": "Complete the agreed work, record progress and submit it to your team lead for review.",
+      "teamId": "TEAM-O",
+      "assigneeId": "E004",
+      "createdById": "A002",
+      "status": "todo",
+      "priority": "medium",
+      "progress": 0,
+      "dueAt": "2026-09-18T12:30:00Z",
+      "createdAt": "2026-09-11T04:00:00Z",
+      "updatedAt": "2026-09-16T08:30:00Z",
+      "completedAt": null
+    },
+    {
+      "id": "T012",
+      "title": "Verify task forms",
+      "description": "Complete the agreed work, record progress and submit it to your team lead for review.",
+      "teamId": "TEAM-O",
+      "assigneeId": "E004",
+      "createdById": "A002",
+      "status": "done",
+      "priority": "medium",
+      "progress": 100,
+      "dueAt": "2026-09-15T12:30:00Z",
+      "createdAt": "2026-09-11T04:00:00Z",
+      "updatedAt": "2026-09-16T08:30:00Z",
+      "completedAt": "2026-09-15T08:00:00Z"
+    },
+    {
+      "id": "T013",
+      "title": "Prepare renewal proposal",
+      "description": "Complete the agreed work, record progress and submit it to your team lead for review.",
+      "teamId": "TEAM-S",
+      "assigneeId": "E005",
+      "createdById": "A003",
+      "status": "inProgress",
+      "priority": "high",
+      "progress": 50,
+      "dueAt": "2026-09-17T12:30:00Z",
+      "createdAt": "2026-09-11T04:00:00Z",
+      "updatedAt": "2026-09-16T08:30:00Z",
+      "completedAt": null
+    },
+    {
+      "id": "T014",
+      "title": "Review account notes",
+      "description": "Complete the agreed work, record progress and submit it to your team lead for review.",
+      "teamId": "TEAM-S",
+      "assigneeId": "E005",
+      "createdById": "A003",
+      "status": "inReview",
+      "priority": "medium",
+      "progress": 100,
+      "dueAt": "2026-09-16T12:30:00Z",
+      "createdAt": "2026-09-11T04:00:00Z",
+      "updatedAt": "2026-09-16T08:30:00Z",
+      "completedAt": null
+    },
+    {
+      "id": "T015",
+      "title": "Schedule customer check-in",
+      "description": "Complete the agreed work, record progress and submit it to your team lead for review.",
+      "teamId": "TEAM-S",
+      "assigneeId": "E005",
+      "createdById": "A003",
+      "status": "todo",
+      "priority": "low",
+      "progress": 0,
+      "dueAt": "2026-09-18T12:30:00Z",
+      "createdAt": "2026-09-11T04:00:00Z",
+      "updatedAt": "2026-09-16T08:30:00Z",
+      "completedAt": null
+    }
+  ],
+  "workEntries": [
+    {
+      "id": "W001",
+      "taskId": "T001",
+      "employeeId": "E001",
+      "startedAt": "2026-09-14T03:30:00.000Z",
+      "endedAt": "2026-09-14T07:00:00.000Z",
+      "note": "Initial work and planning",
+      "source": "manual"
+    },
+    {
+      "id": "W002",
+      "taskId": "T001",
+      "employeeId": "E001",
+      "startedAt": "2026-09-15T03:30:00.000Z",
+      "endedAt": "2026-09-15T07:30:00.000Z",
+      "note": "Implementation and progress",
+      "source": "manual"
+    },
+    {
+      "id": "W003",
+      "taskId": "T001",
+      "employeeId": "E001",
+      "startedAt": "2026-09-16T03:30:00.000Z",
+      "endedAt": "2026-09-16T06:30:00.000Z",
+      "note": "Review and refinement",
+      "source": "manual"
+    },
+    {
+      "id": "W004",
+      "taskId": "T004",
+      "employeeId": "E002",
+      "startedAt": "2026-09-14T03:30:00.000Z",
+      "endedAt": "2026-09-14T08:30:00.000Z",
+      "note": "Initial work and planning",
+      "source": "manual"
+    },
+    {
+      "id": "W005",
+      "taskId": "T004",
+      "employeeId": "E002",
+      "startedAt": "2026-09-15T03:30:00.000Z",
+      "endedAt": "2026-09-15T07:30:00.000Z",
+      "note": "Implementation and progress",
+      "source": "manual"
+    },
+    {
+      "id": "W006",
+      "taskId": "T004",
+      "employeeId": "E002",
+      "startedAt": "2026-09-16T03:30:00.000Z",
+      "endedAt": "2026-09-16T05:30:00.000Z",
+      "note": "Review and refinement",
+      "source": "manual"
+    },
+    {
+      "id": "W007",
+      "taskId": "T007",
+      "employeeId": "E003",
+      "startedAt": "2026-09-14T03:30:00.000Z",
+      "endedAt": "2026-09-14T07:30:00.000Z",
+      "note": "Initial work and planning",
+      "source": "manual"
+    },
+    {
+      "id": "W008",
+      "taskId": "T007",
+      "employeeId": "E003",
+      "startedAt": "2026-09-15T03:30:00.000Z",
+      "endedAt": "2026-09-15T07:00:00.000Z",
+      "note": "Implementation and progress",
+      "source": "manual"
+    },
+    {
+      "id": "W009",
+      "taskId": "T007",
+      "employeeId": "E003",
+      "startedAt": "2026-09-16T03:30:00.000Z",
+      "endedAt": "2026-09-16T06:00:00.000Z",
+      "note": "Review and refinement",
+      "source": "manual"
+    },
+    {
+      "id": "W010",
+      "taskId": "T010",
+      "employeeId": "E004",
+      "startedAt": "2026-09-14T03:30:00.000Z",
+      "endedAt": "2026-09-14T08:30:00.000Z",
+      "note": "Initial work and planning",
+      "source": "manual"
+    },
+    {
+      "id": "W011",
+      "taskId": "T010",
+      "employeeId": "E004",
+      "startedAt": "2026-09-15T03:30:00.000Z",
+      "endedAt": "2026-09-15T08:30:00.000Z",
+      "note": "Implementation and progress",
+      "source": "manual"
+    },
+    {
+      "id": "W012",
+      "taskId": "T010",
+      "employeeId": "E004",
+      "startedAt": "2026-09-16T03:30:00.000Z",
+      "endedAt": "2026-09-16T06:30:00.000Z",
+      "note": "Review and refinement",
+      "source": "manual"
+    },
+    {
+      "id": "W013",
+      "taskId": "T013",
+      "employeeId": "E005",
+      "startedAt": "2026-09-14T03:30:00.000Z",
+      "endedAt": "2026-09-14T06:30:00.000Z",
+      "note": "Initial work and planning",
+      "source": "manual"
+    },
+    {
+      "id": "W014",
+      "taskId": "T013",
+      "employeeId": "E005",
+      "startedAt": "2026-09-15T03:30:00.000Z",
+      "endedAt": "2026-09-15T08:00:00.000Z",
+      "note": "Implementation and progress",
+      "source": "manual"
+    },
+    {
+      "id": "W015",
+      "taskId": "T013",
+      "employeeId": "E005",
+      "startedAt": "2026-09-16T03:30:00.000Z",
+      "endedAt": "2026-09-16T05:30:00.000Z",
+      "note": "Review and refinement",
+      "source": "manual"
+    }
+  ],
+  "taskUpdates": [
+    {
+      "id": "U001",
+      "taskId": "T001",
+      "actorId": "E001",
+      "note": "Dashboard layout and summary cards are ready. Chart styling is in progress.",
+      "blocker": null,
+      "progress": 65,
+      "createdAt": "2026-09-16T08:30:00Z"
+    },
+    {
+      "id": "U002",
+      "taskId": "T007",
+      "actorId": "E003",
+      "note": "Vendor has not confirmed the revised delivery date.",
+      "blocker": "Waiting for vendor confirmation",
+      "progress": 30,
+      "createdAt": "2026-09-16T07:30:00Z"
+    }
+  ],
+  "activity": [
+    {
+      "id": "ACT001",
+      "actorId": "A001",
+      "entityId": "T001",
+      "action": "assigned",
+      "summary": "Priya assigned this task to Asha.",
+      "createdAt": "2026-09-11T04:00:00Z"
+    },
+    {
+      "id": "ACT002",
+      "actorId": "E001",
+      "entityId": "T001",
+      "action": "progressUpdated",
+      "summary": "Asha updated progress to 65%.",
+      "createdAt": "2026-09-16T08:30:00Z"
+    },
+    {
+      "id": "ACT003",
+      "actorId": "E002",
+      "entityId": "T005",
+      "action": "submitted",
+      "summary": "Rahul submitted the profile layout for review.",
+      "createdAt": "2026-09-16T07:30:00Z"
+    },
+    {
+      "id": "ACT004",
+      "actorId": "E003",
+      "entityId": "T007",
+      "action": "blocked",
+      "summary": "Vendor delivery is waiting for confirmation.",
+      "createdAt": "2026-09-16T07:30:00Z"
+    }
+  ],
+  "announcements": [
+    {
+      "id": "N001",
+      "title": "Team check-in at 4 PM",
+      "body": "Bring one progress update and any blockers to the company check-in.",
+      "createdAt": "2026-09-16T03:30:00Z"
+    },
+    {
+      "id": "N002",
+      "title": "Weekly work logs",
+      "body": "Please complete your task work logs before Friday evening.",
+      "createdAt": "2026-09-14T03:30:00Z"
+    }
+  ]
+}
